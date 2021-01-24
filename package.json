@@ -1,6 +1,6 @@
 {
   "name": "rxjs-microstore",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "350b / 650b RxJS state with transformation and filtering options and strict typing for manage your state",
   "main": "dist/index.js",
   "browser": "dist/rxjs-microstore.min.js",
