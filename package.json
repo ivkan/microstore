@@ -1,5 +1,5 @@
 {
-  "name": "microstore",
+  "name": "rxjs-microstore",
   "version": "0.0.1",
   "description": "350b / 650b RxJS state with transformation and filtering options and strict typing for manage your state",
   "main": "dist/index.js",
@@ -12,7 +12,8 @@
     "ci": "(npm run build && npm run rollup) & npm t & wait",
     "prepublishOnly": "npm run ci && npm run rollup",
     "test": "jest",
-    "rollup": "rollup -c"
+    "rollup": "rollup -c",
+    "npmPublish": "npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
