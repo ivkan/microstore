@@ -1,19 +1,19 @@
 {
   "name": "rxjs-microstore",
-  "version": "0.0.3",
-  "description": "350b / 650b RxJS state with transformation and filtering options and strict typing for manage your state",
-  "main": "dist/index.js",
-  "browser": "dist/rxjs-microstore.min.js",
+  "version": "0.0.5",
+  "description": "RxJS state with transformation and filtering options and strict typing for manage your state",
+  "main": "src/index.js",
   "files": [
-    "dist"
+    "src/**/*.js",
+    "src/**/*.js.map",
+    "src/**/*.d.ts"
   ],
+  "types": "src/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "ci": "(npm run build && npm run rollup) & npm t & wait",
-    "prepublishOnly": "npm run ci && npm run rollup",
     "test": "jest",
-    "rollup": "rollup -c",
-    "npmPublish": "npm version patch && npm publish"
+    "prepublishOnly": "npm run build",
+    "npmPublish": "npm publish"
   },
   "repository": {
     "type": "git",
@@ -36,7 +36,7 @@
     "url": "https://github.com/ivkan/rxjs-microstore/issues"
   },
   "homepage": "https://github.com/ivkan/rxjs-microstore#readme",
-  "dependencies": {
+  "peerDependencies": {
     "rxjs": "^6.6.3"
   },
   "devDependencies": {
