@@ -1,7 +1,7 @@
 {
   "name": "rxjs-microstore",
   "version": "0.0.5",
-  "description": "RxJS state with transformation and filtering options and strict typing for manage your state",
+  "description": "740b / 1.7kB RxJS state with transformation and filtering options and strict typing for manage your state",
   "main": "src/index.js",
   "files": [
     "src/**/*.js",
